@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Crosier WebView',
+      title: 'Viação Iapó',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -65,7 +65,7 @@ class _WebViewWebPageState extends State<WebViewWebPage> {
     }
   }
 
-  var url = "https://core.demo.crosier.com.br";
+  var url = "https://www.crosier.com.br/viacaoiapo-app";
 
   // Webview progress
   double progress = 0;
@@ -77,7 +77,7 @@ class _WebViewWebPageState extends State<WebViewWebPage> {
       onWillPop: _onBack,
       child: Scaffold(
           appBar: AppBar(
-            title: Text("Crosier WebView"),
+            title: Text("Viação Iapó"),
           ),
           body: Container(
               child: Column(
