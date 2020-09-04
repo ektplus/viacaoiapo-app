@@ -1,4 +1,4 @@
-package com.example.CrosierWebView
+package br.com.crosier.ViacaoIapoApp
 
 import io.flutter.embedding.android.FlutterActivity
 
