@@ -30,25 +30,22 @@ class _WebViewWebPageState extends State<WebViewWebPage> {
     return WillPopScope(
       onWillPop: _onBack,
       child: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.only(top: 28.0),
-          child: Container(
-            child: Column(
-                children: <Widget>[
-              Expanded(
-                child: Container(
-                  child: InAppWebView(
-                    initialUrl: url,
-                    initialHeaders: {},
-                    initialOptions: {},
-                    onWebViewCreated: (InAppWebViewController controller) {
-                      webView = controller;
-                    },
-                  ),
+        body: Container(
+          child: Column(
+              children: <Widget>[
+            Expanded(
+              child: Container(
+                child: InAppWebView(
+                  initialUrl: url,
+                  initialHeaders: {},
+                  initialOptions: {},
+                  onWebViewCreated: (InAppWebViewController controller) {
+                    webView = controller;
+                  },
                 ),
-              )
-            ].where((Object o) => o != null).toList()),
-          ),
+              ),
+            )
+          ].where((Object o) => o != null).toList()),
         ),
       ),
     ); //Remove null widgets
