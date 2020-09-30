@@ -1,5 +1,6 @@
 target 'Runner' do
   use_frameworks!  # required by simple_permission
+  use_modular_headers!
 end
 
 post_install do |installer|
