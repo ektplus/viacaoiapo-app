@@ -1,3 +1,5 @@
+platform :ios, '9.0'
+
 target 'Runner' do
   use_frameworks!  # required by simple_permission
   use_modular_headers!
