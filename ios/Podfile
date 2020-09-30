@@ -1,6 +1,5 @@
 target 'Runner' do
   use_frameworks!  # required by simple_permission
-  ...
 end
 
 post_install do |installer|
