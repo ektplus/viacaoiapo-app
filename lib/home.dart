@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_inappbrowser/flutter_inappbrowser.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+
 
 void main() => runApp(Home());
 
@@ -38,7 +39,6 @@ class _WebViewWebPageState extends State<WebViewWebPage> {
                 child: InAppWebView(
                   initialUrl: url,
                   initialHeaders: {},
-                  initialOptions: {},
                   onWebViewCreated: (InAppWebViewController controller) {
                     webView = controller;
                   },
